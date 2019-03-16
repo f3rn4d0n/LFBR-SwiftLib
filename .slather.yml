@@ -2,5 +2,7 @@ coverage_service: cobertura_xml
 xcodeproj: LFBR.SwiftLib.xcodeproj
 scheme: LFBR.SwiftLib
 output_directory: reports
+ci_service: travis_pro
+coverage_access_token: f-5nWrHfHzPczCFBZIWy8Q
 ignore:
   - LFBR.SwiftLibTests/*
