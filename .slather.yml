@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: LFBR.SwiftLib.xcodeproj
+scheme: LFBR.SwiftLib
+output_directory: reports
+ignore:
+  - LFBR.SwiftLibTests/*
