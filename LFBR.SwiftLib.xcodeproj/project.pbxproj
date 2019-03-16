@@ -15,6 +15,22 @@
 		C81B02C4223C7F69000CF482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81B02C2223C7F69000CF482 /* Main.storyboard */; };
 		C81B02C6223C7F6B000CF482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81B02C5223C7F6B000CF482 /* Assets.xcassets */; };
 		C81B02C9223C7F6B000CF482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81B02C7223C7F6B000CF482 /* LaunchScreen.storyboard */; };
+		C81B02E7223C879E000CF482 /* CommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02DD223C879E000CF482 /* CommonCrypto.swift */; };
+		C81B02E8223C879E000CF482 /* AlertPickerSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E0223C879E000CF482 /* AlertPickerSelectorViewController.swift */; };
+		C81B02E9223C879E000CF482 /* AlertPickerSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C81B02E1223C879E000CF482 /* AlertPickerSelectorViewController.xib */; };
+		C81B02EA223C879E000CF482 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E3223C879E000CF482 /* ReachabilityManager.swift */; };
+		C81B02EB223C879E000CF482 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E4223C879E000CF482 /* Reachability.swift */; };
+		C81B02EC223C879E000CF482 /* MessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E5223C879E000CF482 /* MessageObject.swift */; };
+		C81B02ED223C879E000CF482 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E6223C879E000CF482 /* TriangleView.swift */; };
+		C81B02F8223C886E000CF482 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02EF223C886E000CF482 /* UIFont+Extension.swift */; };
+		C81B02F9223C886E000CF482 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F0223C886E000CF482 /* Int+Extension.swift */; };
+		C81B02FA223C886E000CF482 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F1223C886E000CF482 /* UIWindow+Extension.swift */; };
+		C81B02FB223C886E000CF482 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F2223C886E000CF482 /* Date+Extension.swift */; };
+		C81B02FC223C886E000CF482 /* SizesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F3223C886E000CF482 /* SizesExtension.swift */; };
+		C81B02FD223C886E000CF482 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F4223C886E000CF482 /* String+Extension.swift */; };
+		C81B02FE223C886E000CF482 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F5223C886E000CF482 /* Color+Extension.swift */; };
+		C81B02FF223C886E000CF482 /* Float+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F6223C886E000CF482 /* Float+extension.swift */; };
+		C81B0300223C886E000CF482 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F7223C886E000CF482 /* ViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +57,22 @@
 		C81B02C5223C7F6B000CF482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C81B02C8223C7F6B000CF482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C81B02CA223C7F6B000CF482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81B02DD223C879E000CF482 /* CommonCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCrypto.swift; sourceTree = "<group>"; };
+		C81B02E0223C879E000CF482 /* AlertPickerSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPickerSelectorViewController.swift; sourceTree = "<group>"; };
+		C81B02E1223C879E000CF482 /* AlertPickerSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertPickerSelectorViewController.xib; sourceTree = "<group>"; };
+		C81B02E3223C879E000CF482 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		C81B02E4223C879E000CF482 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		C81B02E5223C879E000CF482 /* MessageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageObject.swift; sourceTree = "<group>"; };
+		C81B02E6223C879E000CF482 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		C81B02EF223C886E000CF482 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		C81B02F0223C886E000CF482 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		C81B02F1223C886E000CF482 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		C81B02F2223C886E000CF482 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C81B02F3223C886E000CF482 /* SizesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizesExtension.swift; sourceTree = "<group>"; };
+		C81B02F4223C886E000CF482 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C81B02F5223C886E000CF482 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		C81B02F6223C886E000CF482 /* Float+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+extension.swift"; sourceTree = "<group>"; };
+		C81B02F7223C886E000CF482 /* ViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +124,9 @@
 		C81B02A0223C7EAE000CF482 /* LFBR.SwiftLib */ = {
 			isa = PBXGroup;
 			children = (
+				C81B02EE223C886E000CF482 /* Extensions */,
+				C81B02DC223C879E000CF482 /* Crypto */,
+				C81B02DE223C879E000CF482 /* UI&UX */,
 				C81B02A1223C7EAE000CF482 /* LFBR_SwiftLib.h */,
 				C81B02A2223C7EAE000CF482 /* Info.plist */,
 			);
@@ -118,6 +153,59 @@
 				C81B02CA223C7F6B000CF482 /* Info.plist */,
 			);
 			path = LFBR.SwiftLibExamples;
+			sourceTree = "<group>";
+		};
+		C81B02DC223C879E000CF482 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				C81B02DD223C879E000CF482 /* CommonCrypto.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		C81B02DE223C879E000CF482 /* UI&UX */ = {
+			isa = PBXGroup;
+			children = (
+				C81B02DF223C879E000CF482 /* AlertPickerSelector */,
+				C81B02E2223C879E000CF482 /* Reachability */,
+				C81B02E5223C879E000CF482 /* MessageObject.swift */,
+				C81B02E6223C879E000CF482 /* TriangleView.swift */,
+			);
+			path = "UI&UX";
+			sourceTree = "<group>";
+		};
+		C81B02DF223C879E000CF482 /* AlertPickerSelector */ = {
+			isa = PBXGroup;
+			children = (
+				C81B02E0223C879E000CF482 /* AlertPickerSelectorViewController.swift */,
+				C81B02E1223C879E000CF482 /* AlertPickerSelectorViewController.xib */,
+			);
+			path = AlertPickerSelector;
+			sourceTree = "<group>";
+		};
+		C81B02E2223C879E000CF482 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C81B02E3223C879E000CF482 /* ReachabilityManager.swift */,
+				C81B02E4223C879E000CF482 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		C81B02EE223C886E000CF482 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C81B02EF223C886E000CF482 /* UIFont+Extension.swift */,
+				C81B02F0223C886E000CF482 /* Int+Extension.swift */,
+				C81B02F1223C886E000CF482 /* UIWindow+Extension.swift */,
+				C81B02F2223C886E000CF482 /* Date+Extension.swift */,
+				C81B02F3223C886E000CF482 /* SizesExtension.swift */,
+				C81B02F4223C886E000CF482 /* String+Extension.swift */,
+				C81B02F5223C886E000CF482 /* Color+Extension.swift */,
+				C81B02F6223C886E000CF482 /* Float+extension.swift */,
+				C81B02F7223C886E000CF482 /* ViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81B02E9223C879E000CF482 /* AlertPickerSelectorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +349,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81B02F8223C886E000CF482 /* UIFont+Extension.swift in Sources */,
+				C81B02F9223C886E000CF482 /* Int+Extension.swift in Sources */,
+				C81B02FA223C886E000CF482 /* UIWindow+Extension.swift in Sources */,
+				C81B02FC223C886E000CF482 /* SizesExtension.swift in Sources */,
+				C81B02FD223C886E000CF482 /* String+Extension.swift in Sources */,
+				C81B02E8223C879E000CF482 /* AlertPickerSelectorViewController.swift in Sources */,
+				C81B02FF223C886E000CF482 /* Float+extension.swift in Sources */,
+				C81B02EA223C879E000CF482 /* ReachabilityManager.swift in Sources */,
+				C81B0300223C886E000CF482 /* ViewController+Extension.swift in Sources */,
+				C81B02FB223C886E000CF482 /* Date+Extension.swift in Sources */,
+				C81B02EC223C879E000CF482 /* MessageObject.swift in Sources */,
+				C81B02EB223C879E000CF482 /* Reachability.swift in Sources */,
+				C81B02ED223C879E000CF482 /* TriangleView.swift in Sources */,
+				C81B02E7223C879E000CF482 /* CommonCrypto.swift in Sources */,
+				C81B02FE223C886E000CF482 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +589,7 @@
 		C81B02B6223C7EAE000CF482 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T94L48M7HD;
 				INFOPLIST_FILE = LFBR.SwiftLibTests/Info.plist;
@@ -503,6 +608,7 @@
 		C81B02B7223C7EAE000CF482 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T94L48M7HD;
 				INFOPLIST_FILE = LFBR.SwiftLibTests/Info.plist;
