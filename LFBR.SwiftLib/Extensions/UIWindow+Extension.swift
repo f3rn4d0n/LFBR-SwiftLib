@@ -13,6 +13,11 @@ class UIWindow_Extension: NSObject {
 }
 
 public extension UIWindow {
+    
+    
+    /// Get top visible view controller
+    ///
+    /// - Returns: Top view controller 
     func visibleViewController() -> UIViewController? {
         if let rootViewController: UIViewController = UIApplication.shared.keyWindow?.rootViewController {
             return UIWindow.getVisibleViewController(viewController: rootViewController)
@@ -35,14 +40,6 @@ public extension UIWindow {
         }
         
         return viewController
-    }
-    
-    
-    func visibleViewControllerForWindow(window: UIWindow?,  exceptions: Array<AnyObject.Type>?) -> UIViewController? {
-        if let rootViewController: UIViewController = window?.rootViewController {
-            return UIWindow.getVisibleViewController(viewController: rootViewController, exceptions: exceptions)
-        }
-        return nil
     }
     
     class func getVisibleViewController(viewController: UIViewController?, exceptions: Array<AnyObject.Type>?) -> UIViewController? {
@@ -82,9 +79,7 @@ public extension UIWindow {
             if numberCount > 0 {
                 var allowed = true
                 for vcType in exceptions! {
-                    //                    print("Exception \(vcType), presentedview \(String(describing: presentedViewController)")
                     if vc.isKind(of: vcType) {
-                        //                        print("Mismo tipo de vc. Es un controlador no permitido, no se mostrará")
                         allowed = false
                         break
                     }

@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LFBR.SwiftLib"
-  spec.version      = "0.0.2"
-  spec.summary      = " 📦 Commons extensions and complements written in swift to be development easier"
+  spec.version      = "0.1.0"
+  spec.summary      = " 📦 Commons extensions, cryptosecurity, rechability and complements written in swift to be development easier"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -70,10 +70,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-   spec.platform     = :ios, "12.0"
+   spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "12.1"
+  spec.ios.deployment_target = "11.0"
   spec.swift_version = "4.2"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"

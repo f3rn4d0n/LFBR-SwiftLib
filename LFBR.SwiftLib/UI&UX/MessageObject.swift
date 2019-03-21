@@ -14,6 +14,12 @@ public final class MessageObject: NSObject {
     
     private override init() {super.init()}
     
+    /// Show alert view controller with custom message, title and ok title button
+    ///
+    /// - Parameters:
+    ///   - message: Message string
+    ///   - title: Title string
+    ///   - okMessage: Accept string
     public func showMessage(_ message:String, title:String, okMessage:String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title: okMessage, style: UIAlertAction.Style.default) {
@@ -31,6 +37,12 @@ public final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
+    /// Show alert view controller with custom message, title and OK custom button
+    ///
+    /// - Parameters:
+    ///   - message: Message string
+    ///   - title: Title string
+    ///   - okAction: OK action behavoir
     public func showMessage(_ message:String, title:String, okAction:UIAlertAction){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(okAction)
@@ -41,6 +53,13 @@ public final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
+    /// Show alert view controller with custom message, title, OK custom button and Cancel custom button
+    ///
+    /// - Parameters:
+    ///   - message: Message string
+    ///   - title: Title string
+    ///   - okAction: OK action behavoir
+    ///   - cancelAction: Cancel action behavoir
     public func showMessage(_ message:String, title:String, okAction:UIAlertAction, cancelAction:UIAlertAction){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(okAction)
@@ -52,6 +71,13 @@ public final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
+    /// Show alert view controller with custom message, title, OK custom button and Cancel title button
+    ///
+    /// - Parameters:
+    ///   - message: Message string
+    ///   - title: Title string
+    ///   - okAction: OK action behavoir
+    ///   - cancelMessage: Cancel string
     public func showMessage(_ message:String, title:String, okAction:UIAlertAction, cancelMessage:String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(okAction)
@@ -67,6 +93,15 @@ public final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
+    /// Show alert view controller with a textview instead of this
+    ///
+    /// - Parameters:
+    ///   - message: Message string
+    ///   - title: Title string
+    ///   - okMessage: Accept string
+    ///   - cancelMessage: Cancel string
+    ///   - textPlaceHolder: Default string for your textview
+    ///   - completion: Function to excecute after any button was clicked
     public func showMessageWithTextView(_ message:String, title:String, okMessage:String, cancelMessage:String, textPlaceHolder:String, completion:@escaping(String) ->Void){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addTextField { (textField: UITextField) in

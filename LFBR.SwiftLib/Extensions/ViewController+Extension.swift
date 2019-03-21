@@ -22,23 +22,29 @@ class ViewController_Extension: UIViewController {
 
 // Put this piece of code anywhere you like
 public extension UIViewController {
+    /// Remove keyboard when tap over any part of windows
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     
+    /// Remove keyboard when tap over any part of selected view
     func hideKeyboardWhenTappedIn(currentView: UIView){
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         currentView.addGestureRecognizer(tap)
     }
     
+    /// Dismiss keyboard
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
     
+    /// Get keyboard height
+    ///
+    /// - Returns: Keyboard height
     func  heightKeyboard() -> CGFloat{
         if UIDevice().userInterfaceIdiom == .phone {
             switch IPHONE_DEVICE{

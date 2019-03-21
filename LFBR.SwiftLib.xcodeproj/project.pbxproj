@@ -21,8 +21,6 @@
 		C81B02EA223C879E000CF482 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E3223C879E000CF482 /* ReachabilityManager.swift */; };
 		C81B02EB223C879E000CF482 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E4223C879E000CF482 /* Reachability.swift */; };
 		C81B02EC223C879E000CF482 /* MessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E5223C879E000CF482 /* MessageObject.swift */; };
-		C81B02ED223C879E000CF482 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02E6223C879E000CF482 /* TriangleView.swift */; };
-		C81B02F8223C886E000CF482 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02EF223C886E000CF482 /* UIFont+Extension.swift */; };
 		C81B02F9223C886E000CF482 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F0223C886E000CF482 /* Int+Extension.swift */; };
 		C81B02FA223C886E000CF482 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F1223C886E000CF482 /* UIWindow+Extension.swift */; };
 		C81B02FB223C886E000CF482 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F2223C886E000CF482 /* Date+Extension.swift */; };
@@ -64,8 +62,6 @@
 		C81B02E3223C879E000CF482 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		C81B02E4223C879E000CF482 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C81B02E5223C879E000CF482 /* MessageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageObject.swift; sourceTree = "<group>"; };
-		C81B02E6223C879E000CF482 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
-		C81B02EF223C886E000CF482 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		C81B02F0223C886E000CF482 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		C81B02F1223C886E000CF482 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		C81B02F2223C886E000CF482 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -171,7 +167,6 @@
 				C81B02DF223C879E000CF482 /* AlertPickerSelector */,
 				C81B02E2223C879E000CF482 /* Reachability */,
 				C81B02E5223C879E000CF482 /* MessageObject.swift */,
-				C81B02E6223C879E000CF482 /* TriangleView.swift */,
 			);
 			path = "UI&UX";
 			sourceTree = "<group>";
@@ -197,7 +192,6 @@
 		C81B02EE223C886E000CF482 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C81B02EF223C886E000CF482 /* UIFont+Extension.swift */,
 				C81B02F0223C886E000CF482 /* Int+Extension.swift */,
 				C81B02F1223C886E000CF482 /* UIWindow+Extension.swift */,
 				C81B02F2223C886E000CF482 /* Date+Extension.swift */,
@@ -352,7 +346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C81B02F8223C886E000CF482 /* UIFont+Extension.swift in Sources */,
 				C81B02F9223C886E000CF482 /* Int+Extension.swift in Sources */,
 				C81B02FA223C886E000CF482 /* UIWindow+Extension.swift in Sources */,
 				C81B02FC223C886E000CF482 /* Sizes+Extension.swift in Sources */,
@@ -365,7 +358,6 @@
 				C81B02FB223C886E000CF482 /* Date+Extension.swift in Sources */,
 				C81B02EC223C879E000CF482 /* MessageObject.swift in Sources */,
 				C81B02EB223C879E000CF482 /* Reachability.swift in Sources */,
-				C81B02ED223C879E000CF482 /* TriangleView.swift in Sources */,
 				C81B02E7223C879E000CF482 /* CommonCrypto.swift in Sources */,
 				C81B02FE223C886E000CF482 /* Color+Extension.swift in Sources */,
 			);
@@ -470,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -529,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -26,11 +26,11 @@ class ReachabilityManager: NSObject {
     }
     
     func startNotifier() {
-        print("JG Internet --- start notifier")
+        print("Internet --- start notifier")
         do {
             try reachability?.startNotifier()
         } catch {
-            print("JG Internet Unable to start\nnotifier")
+            print("Internet Unable to start\nnotifier")
             return
         }
     }

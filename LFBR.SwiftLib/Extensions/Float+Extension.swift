@@ -14,8 +14,13 @@ class Float_extension: NSObject {
 
 public extension Float {
     
+    /// Return string representation with custom decimals and decimal separator
+    ///
+    /// - Parameters:
+    ///   - fractionDigits: number of digits after dot
+    ///   - customDecimalSeparator: custom decimal separator, by default is dot ('.')
+    /// - Returns: String representation
     func formatWithFractionDigits(_ fractionDigits: Int, customDecimalSeparator: String? = nil) -> String {
-        
         let fmt = NumberFormatter()
         fmt.numberStyle = .decimal
         fmt.maximumFractionDigits = fractionDigits
@@ -23,11 +28,5 @@ public extension Float {
         fmt.decimalSeparator = customDecimalSeparator ?? fmt.decimalSeparator
         
         return  fmt.string(from: NSNumber(value: self)) ?? ""
-    }
-}
-
-public extension CGFloat {
-    static func random() -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt32.max)
     }
 }

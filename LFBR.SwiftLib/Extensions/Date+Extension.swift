@@ -83,8 +83,6 @@ public extension Date {
         return date.getTimeBy(format: "dd-MMM")
     }
     
-    
-    
     /// Return date as string
     ///
     /// - Parameter format: formate descriptio
@@ -95,14 +93,9 @@ public extension Date {
         return dateFormatter.string(from: self)
     }
     
-    func isOlderAgainst(_ againstDate:Date) -> Bool{
-        let dateLimit = NSCalendar.current.date(byAdding: .month, value: 3, to: self)
-        if dateLimit! > againstDate{
-            return true
-        }
-        return false
-    }
-    
+    /// Transform current date value to int representation by offset
+    ///
+    /// - Returns: Int64 representation
     func getTimeStamp() -> Int64{
         return Int64(self.timeIntervalSince1970)
     }

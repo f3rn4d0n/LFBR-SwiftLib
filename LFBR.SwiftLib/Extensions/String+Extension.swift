@@ -21,35 +21,23 @@ public let __numberPredicate = NSPredicate(format: "SELF MATCHES %@", __numberRe
 
 public extension String {
     
+    /// String representation by urlQueryAllowed
+    ///
+    /// - Returns: string representation validated to url encode
     func encodeUrl() -> String?{
         return self.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
     }
+    
+    /// Decode url to get friendly string
+    ///
+    /// - Returns: string decoded
     func decodeUrl() -> String?{
         return self.removingPercentEncoding
     }
     
-    func urlPercentEncoded(withAllowedCharacters allowedCharacters:
-        CharacterSet, encoding: String.Encoding) -> String {
-        var returnStr = ""
-        
-        // Compute each char seperatly
-        for char in self {
-            let charStr = String(char)
-            let charScalar = charStr.unicodeScalars[charStr.unicodeScalars.startIndex]
-            if allowedCharacters.contains(charScalar) == false,
-                let bytesOfChar = charStr.data(using: encoding) {
-                // Get the hexStr of every notAllowed-char-byte and put a % infront of it, append the result to the returnString
-                for byte in bytesOfChar {
-                    returnStr += "%" + String(format: "%02hhX", byte as CVarArg)
-                }
-            } else {
-                returnStr += charStr
-            }
-        }
-        
-        return returnStr
-    }
-    
+    /// Check if your current string can be used like URL
+    ///
+    /// - Returns: Validate if current string is URL
     func isURL () -> Bool {
         if let url = NSURL(string: self) {
             // check if your application can open the NSURL instance
@@ -58,14 +46,23 @@ public extension String {
         return false
     }
     
+    /// Check if your current string can be used like email
+    ///
+    /// - Returns: Validate if your string is an email
     func isEmail() -> Bool {
         return __emailPredicate.evaluate(with: self)
     }
     
+    /// Check if your current string can be used like number
+    ///
+    /// - Returns: Validate if your string is a number
     func isNumber() -> Bool{
         return __numberPredicate.evaluate(with: self)
     }
     
+    /// Transform your current string to Float with 2 decimals, if your string doesn't have valid format then your response will be 0
+    ///
+    /// - Returns: Float representation
     func toFloat(_ localeIdentifier: String? = nil) -> Float {
         let locale = localeIdentifier != nil ?  Locale(identifier: localeIdentifier!) : Locale.current
         
@@ -78,6 +75,7 @@ public extension String {
         return fmt.number(from: self)?.floatValue ?? 0
     }
     
+    /// Integer reprentation of your current string, if your string doesn't have valid format then your response will be 0
     var int : Int {
         if self.isNumber() {
             return Int(self.split(separator: ".")[0]) ?? 0
@@ -87,13 +85,15 @@ public extension String {
     }
     
     
-    func sliderAttributeString(intFont: UIFont, decimalFont: UIFont, customDecimalSeparator: String? = nil) -> NSAttributedString {
+    /// Transform your current string to NSAttributedString, changing numbers to NumberFormatter
+    ///
+    /// - Returns: NSAttributedString with number formatter
+    func sliderAttributeString() -> NSAttributedString {
         guard self != "" else { return NSAttributedString(string: "") }
         
         let locale = Locale.current
         let fmt = NumberFormatter()
         fmt.locale = locale
-        fmt.decimalSeparator = customDecimalSeparator ?? fmt.decimalSeparator
         
         let numberComponents = components(separatedBy: fmt.decimalSeparator)
         
@@ -120,6 +120,13 @@ public extension String {
 }
 
 public extension NSString{
+    /// Transform your current string to NSAttributedString, changing fonts from your seleted array of strings
+    ///
+    /// - Parameters:
+    ///   - boldPartsOfString: Array to strings to need his font changed
+    ///   - font: Font for all your string
+    ///   - boldFont: Font for your strings selected
+    /// - Returns: NSAttributedString with string font changed
     func getdBoldedText(boldPartsOfString: Array<NSString>, font: UIFont!, boldFont: UIFont!) -> NSAttributedString {
         
         let nonBoldFontAttribute = [NSAttributedString.Key.font:font!]

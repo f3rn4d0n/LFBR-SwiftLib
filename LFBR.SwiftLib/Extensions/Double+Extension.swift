@@ -13,8 +13,13 @@ class Double_Extension: NSObject {
 }
 extension Double {
     
-    func formatWithFractionDigits(_ fractionDigits: Int, customDecimalSeparator: String? = nil) -> String {
-        
+    /// Return string representation with custom decimals and decimal separator
+    ///
+    /// - Parameters:
+    ///   - fractionDigits: number of digits after dot
+    ///   - customDecimalSeparator: custom decimal separator, by default is dot ('.')
+    /// - Returns: String representation
+    func formatWithFractionDigits(_ fractionDigits: Int, customDecimalSeparator: String? = ".") -> String {
         let fmt = NumberFormatter()
         fmt.numberStyle = .decimal
         fmt.maximumFractionDigits = fractionDigits

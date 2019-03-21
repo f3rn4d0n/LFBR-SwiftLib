@@ -13,6 +13,9 @@ class Int_Extension: NSObject {
 }
 
 public extension Int{
+    /// Transform current int value to time representation by offset
+    ///
+    /// - Returns: Date representation
     func getDateByOffset() -> Date{
         return Date(timeIntervalSince1970: TimeInterval(self))
     }

@@ -81,10 +81,6 @@ class LFBR_SwiftLibTests: XCTestCase {
     }
     
     func testFloat(){
-        let random1 = CGFloat.random()
-        let random2 = CGFloat.random()
-        XCTAssertTrue(random1 != random2)
-        
         let myFloat:Float = 3.14159
         let floatLikeString = myFloat.formatWithFractionDigits(2, customDecimalSeparator: ".")
         XCTAssertEqual(floatLikeString, "3.14")
@@ -98,26 +94,22 @@ class LFBR_SwiftLibTests: XCTestCase {
     }
     
     func testDate(){
+        //Date was initialized
         let date1Str = "2019/03/20 00:35:02"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
         dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-        
-        
         let date1 = dateFormatter.date(from: date1Str)
-        let offsetTime1 = date1?.getTimeStamp()
-        XCTAssertEqual(offsetTime1, 1553042102000/1000)
         
-        
-        
-        
+        //This date was getter by https://www.epochconverter.com ro confirm evaluation
         let dateAsInt = 1553042102
+        
+        let offsetTime1 = date1?.getTimeStamp()
+        XCTAssertEqual(offsetTime1, Int64(dateAsInt))
+        
         let date2 = dateAsInt.getDateByOffset()
         XCTAssertEqual(date2, date1)
         
-        
-        
-
     }
     
     func testSize(){
