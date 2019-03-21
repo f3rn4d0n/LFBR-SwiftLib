@@ -10,18 +10,18 @@
 import UIKit
 import CommonCrypto
 
-protocol Randomizer {
+public protocol Randomizer {
     static func randomIv() -> Data
     static func randomSalt() -> Data
     static func randomData(length: Int) -> Data
 }
 
-protocol Crypter {
+public protocol Crypter {
     func encrypt(_ digest: Data) throws -> Data
     func decrypt(_ encrypted: Data) throws -> Data
 }
 
-struct AES256Crypter {
+public struct AES256Crypter {
     
     private var key: Data
     private var iv: Data
@@ -37,7 +37,7 @@ struct AES256Crypter {
         self.iv = iv
     }
     
-    enum Error: Swift.Error {
+    public enum Error: Swift.Error {
         case keyGeneration(status: Int)
         case cryptoFailed(status: CCCryptorStatus)
         case badKeyLength
@@ -71,7 +71,7 @@ struct AES256Crypter {
         return Data(bytes: UnsafePointer<UInt8>(outBytes), count: outLength)
     }
     
-    static func createKey(password: Data, salt: Data) throws -> Data {
+    public static func createKey(password: Data, salt: Data) throws -> Data {
         let length = kCCKeySizeAES256
         var status = Int32(0)
         var derivedBytes = [UInt8](repeating: 0, count: length)
@@ -102,11 +102,11 @@ class CommonCrypto: NSObject {
 
 extension AES256Crypter: Crypter {
     
-    func encrypt(_ digest: Data) throws -> Data {
+    public func encrypt(_ digest: Data) throws -> Data {
         return try crypt(input: digest, operation: CCOperation(kCCEncrypt))
     }
     
-    func decrypt(_ encrypted: Data) throws -> Data {
+    public func decrypt(_ encrypted: Data) throws -> Data {
         return try crypt(input: encrypted, operation: CCOperation(kCCDecrypt))
     }
     
@@ -114,15 +114,15 @@ extension AES256Crypter: Crypter {
 
 extension AES256Crypter: Randomizer {
     
-    static func randomIv() -> Data {
+    public static func randomIv() -> Data {
         return randomData(length: kCCBlockSizeAES128)
     }
     
-    static func randomSalt() -> Data {
+    public static func randomSalt() -> Data {
         return randomData(length: 8)
     }
     
-    static func randomData(length: Int) -> Data {
+    public static func randomData(length: Int) -> Data {
         var data = Data(count: length)
         let status = data.withUnsafeMutableBytes { mutableBytes in
             SecRandomCopyBytes(kSecRandomDefault, length, mutableBytes)

@@ -12,7 +12,7 @@ class Float_extension: NSObject {
 
 }
 
-extension Float {
+public extension Float {
     
     func formatWithFractionDigits(_ fractionDigits: Int, customDecimalSeparator: String? = nil) -> String {
         
@@ -26,7 +26,7 @@ extension Float {
     }
 }
 
-extension CGFloat {
+public extension CGFloat {
     static func random() -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UInt32.max)
     }

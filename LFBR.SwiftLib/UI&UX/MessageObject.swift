@@ -8,13 +8,13 @@
 
 import UIKit
 
-final class MessageObject: NSObject {
+public final class MessageObject: NSObject {
     
-    static let sharedInstance = MessageObject()
+    public static let sharedInstance = MessageObject()
     
     private override init() {super.init()}
     
-    func showMessage(_ message:String, title:String, okMessage:String){
+    public func showMessage(_ message:String, title:String, okMessage:String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title: okMessage, style: UIAlertAction.Style.default) {
             (result : UIAlertAction) -> Void in
@@ -31,7 +31,7 @@ final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    func showMessage(_ message:String, title:String, okAction:UIAlertAction){
+    public func showMessage(_ message:String, title:String, okAction:UIAlertAction){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(okAction)
         let window = UIWindow.init(frame: UIScreen.main.bounds)
@@ -41,7 +41,7 @@ final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    func showMessage(_ message:String, title:String, okAction:UIAlertAction, cancelAction:UIAlertAction){
+    public func showMessage(_ message:String, title:String, okAction:UIAlertAction, cancelAction:UIAlertAction){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
@@ -52,7 +52,7 @@ final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    func showMessage(_ message:String, title:String, okAction:UIAlertAction, cancelMessage:String){
+    public func showMessage(_ message:String, title:String, okAction:UIAlertAction, cancelMessage:String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(okAction)
         let cancelAction = UIAlertAction(title: cancelMessage, style: UIAlertAction.Style.default) {
@@ -67,7 +67,7 @@ final class MessageObject: NSObject {
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    func showMessageWithTextView(_ message:String, title:String, okMessage:String, cancelMessage:String, textPlaceHolder:String, completion:@escaping(String) ->Void){
+    public func showMessageWithTextView(_ message:String, title:String, okMessage:String, cancelMessage:String, textPlaceHolder:String, completion:@escaping(String) ->Void){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alertController.addTextField { (textField: UITextField) in
             textField.keyboardAppearance = .dark

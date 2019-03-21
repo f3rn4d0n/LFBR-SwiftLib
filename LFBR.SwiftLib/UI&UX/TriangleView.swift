@@ -8,17 +8,17 @@
 
 import UIKit
 
-class TriangleSended : UIView {
+public class TriangleSended : UIView {
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         
         guard let context = UIGraphicsGetCurrentContext() else { return }
         
@@ -33,17 +33,17 @@ class TriangleSended : UIView {
     }
 }
 
-class TriangleRecived : UIView {
+public class TriangleRecived : UIView {
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         
         guard let context = UIGraphicsGetCurrentContext() else { return }
         

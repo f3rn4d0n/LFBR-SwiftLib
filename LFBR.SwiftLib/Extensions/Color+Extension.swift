@@ -12,7 +12,7 @@ class Color_Extension: NSObject {
 
 }
 
-extension UIColor {
+public extension UIColor {
     
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")

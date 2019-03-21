@@ -12,7 +12,7 @@ class UIFont_Extension: NSObject {
 
 }
 
-extension UIFont {
+public extension UIFont {
     
     enum fontType{
         case MAIN_ACTIONS

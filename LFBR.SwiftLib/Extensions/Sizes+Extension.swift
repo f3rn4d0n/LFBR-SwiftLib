@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-enum iPhoneDevices {
+public enum iPhoneDevices {
     case IPHONE_4
     case IPHONE_5
     case IPHONE_6
@@ -18,7 +18,7 @@ enum iPhoneDevices {
     case IPHONE_UNKNOWN
 }
 
-var IPHONE_DEVICE: iPhoneDevices {
+public var IPHONE_DEVICE: iPhoneDevices {
     let mainScreenBounds = UIScreen.main.bounds
     if mainScreenBounds.size.height == 480.0 || mainScreenBounds.size.width == 480.0 {
         return .IPHONE_4

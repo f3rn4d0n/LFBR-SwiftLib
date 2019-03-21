@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol AlertPickerDelegate{
+public protocol AlertPickerDelegate{
     func dateSelected(_ dateSelected: Date, andTag: Int)
 }
 
-class AlertPickerSelectorViewController: UIViewController {
+public class AlertPickerSelectorViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var acceptBtn: UIButton!
@@ -22,13 +22,13 @@ class AlertPickerSelectorViewController: UIViewController {
     var minDate = Date()
     var tag = 0
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.minimumDate = minDate
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

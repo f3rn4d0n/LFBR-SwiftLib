@@ -12,8 +12,8 @@ class Int_Extension: NSObject {
 
 }
 
-extension Int{
-    func getTimeByOffset() -> Date{
+public extension Int{
+    func getDateByOffset() -> Date{
         return Date(timeIntervalSince1970: TimeInterval(self))
     }
 }

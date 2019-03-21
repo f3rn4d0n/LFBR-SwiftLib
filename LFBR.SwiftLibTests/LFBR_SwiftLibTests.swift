@@ -66,5 +66,66 @@ class LFBR_SwiftLibTests: XCTestCase {
             XCTFail()
         }
     }
+    
+    func testColorUI(){
+        let redColor = UIColor.init(rgb: 0xFF0000)
+        XCTAssertEqual(redColor,UIColor.red)
+        let greenColor = UIColor.init(rgb: 0x00FF00)
+        XCTAssertEqual(greenColor,UIColor.green)
+        let blueColor = UIColor.init(rgb: 0x0000FF)
+        XCTAssertEqual(blueColor,UIColor.blue)
+        
+        let newRed = UIColor.init(red: 255, green: 0, blue: 0)
+        XCTAssertEqual(newRed,UIColor.red)
+        
+    }
+    
+    func testFloat(){
+        let random1 = CGFloat.random()
+        let random2 = CGFloat.random()
+        XCTAssertTrue(random1 != random2)
+        
+        let myFloat:Float = 3.14159
+        let floatLikeString = myFloat.formatWithFractionDigits(2, customDecimalSeparator: ".")
+        XCTAssertEqual(floatLikeString, "3.14")
+    }
+    
+    func testUIFont(){
+        
+    }
+    
+    func testInt(){
+    }
+    
+    func testDate(){
+        let date1Str = "2019/03/20 00:35:02"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        
+        
+        let date1 = dateFormatter.date(from: date1Str)
+        let offsetTime1 = date1?.getTimeStamp()
+        XCTAssertEqual(offsetTime1, 1553042102000/1000)
+        
+        
+        
+        
+        let dateAsInt = 1553042102
+        let date2 = dateAsInt.getDateByOffset()
+        XCTAssertEqual(date2, date1)
+        
+        
+        
+
+    }
+    
+    func testSize(){
+        
+    }
+    
+    func tetVC(){
+        
+    }
 
 }

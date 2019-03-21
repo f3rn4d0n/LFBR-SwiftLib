@@ -12,7 +12,7 @@ class Date_Extension: NSObject {
 
 }
 
-extension Date {
+public extension Date {
     
     /// Returns the amount of years from another date
     func years(from date: Date) -> Int {
@@ -82,6 +82,8 @@ extension Date {
         let date = Calendar.current.date(byAdding: .day, value: days, to: self)!
         return date.getTimeBy(format: "dd-MMM")
     }
+    
+    
     
     /// Return date as string
     ///

@@ -16,8 +16,8 @@ let __numberRegex = "^[0-9]\\d*(\\.\\d+)?$"
 let __firstpart = "[A-Z0-9a-z]([A-Z0-9a-z._%+-]{0,30}[A-Z0-9a-z])?"
 let __serverpart = "([A-Z0-9a-z]([A-Z0-9a-z-]{0,30}[A-Z0-9a-z])?\\.){1,5}"
 let __emailRegex = __firstpart + "@" + __serverpart + "[A-Za-z]{2,6}"
-let __emailPredicate = NSPredicate(format: "SELF MATCHES %@", __emailRegex)
-let __numberPredicate = NSPredicate(format: "SELF MATCHES %@", __numberRegex)
+public let __emailPredicate = NSPredicate(format: "SELF MATCHES %@", __emailRegex)
+public let __numberPredicate = NSPredicate(format: "SELF MATCHES %@", __numberRegex)
 
 public extension String {
     

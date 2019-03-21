@@ -12,7 +12,7 @@ class UIWindow_Extension: NSObject {
 
 }
 
-extension UIWindow {
+public extension UIWindow {
     func visibleViewController() -> UIViewController? {
         if let rootViewController: UIViewController = UIApplication.shared.keyWindow?.rootViewController {
             return UIWindow.getVisibleViewController(viewController: rootViewController)
