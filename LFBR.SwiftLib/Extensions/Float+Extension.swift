@@ -30,3 +30,12 @@ public extension Float {
         return  fmt.string(from: NSNumber(value: self)) ?? ""
     }
 }
+
+public extension CGFloat {
+    /// Create random CGFloat
+    ///
+    /// - Returns: random value
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
