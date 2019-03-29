@@ -8,12 +8,12 @@
 import Foundation
 
 //Known before as InternetServices
-class ReachabilityManager: NSObject {
+public class ReachabilityManager: NSObject {
     
-    static let sharedInstance = ReachabilityManager()
-    var reachability: Reachability?
+    public static let sharedInstance = ReachabilityManager()
+    public var reachability: Reachability?
     var internetStatus: Reachability.Connection = .none
-    var isInternetAvaliable = false
+    public var isInternetAvaliable = false
     
     private override init() {
         super.init()
@@ -40,7 +40,7 @@ class ReachabilityManager: NSObject {
         reachabilityChangedSelector()
     }
     
-    func reachabilityChangedSelector() {
+    public func reachabilityChangedSelector() {
         let internetConnectionStatus: Reachability.Connection = reachability?.connection ?? .none
         var dictionary = [String:String]()
         switch internetConnectionStatus {
@@ -80,7 +80,7 @@ class ReachabilityManager: NSObject {
         }
     }
     
-    func isInternetAvailable() {
+    public func isInternetAvailable() {
         if let internetStatus: Reachability.Connection = reachability?.connection {
             if internetStatus != .none {
                 isInternetAvaliable = true
