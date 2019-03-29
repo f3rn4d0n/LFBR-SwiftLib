@@ -2,7 +2,7 @@
 
 [![Platform](https://img.shields.io/cocoapods/p/librws.svg?style=flat)](https://cocoapods.org/pods/LFBR.SwiftLib)
 [![Version](https://img.shields.io/cocoapods/v/librws.svg?style=flat)](https://cocoapods.org/pods/LFBR.SwiftLib)
-[![License](https://img.shields.io/cocoapods/l/librws.svg?style=flat)](http://cocoapods.org/pods/librws)
+[![License](https://img.shields.io/cocoapods/l/librws.svg?style=flat)](http://cocoapods.org/pods/LFBR.SwiftLib)
 [![Build Status](https://travis-ci.org/OlehKulykov/librws.svg?branch=master)](https://travis-ci.org/f3rn4d0n/LFBR-SwiftLib)
 [![Build status](https://codecov.io/gh/f3rn4d0n/LFBR-SwiftLib/branch/master/graph/badge.svg)](https://codecov.io/gh/f3rn4d0n/LFBR-SwiftLib)
 
