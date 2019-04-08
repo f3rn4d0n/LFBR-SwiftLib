@@ -29,6 +29,8 @@
 		C81B02FE223C886E000CF482 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F5223C886E000CF482 /* Color+Extension.swift */; };
 		C81B02FF223C886E000CF482 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F6223C886E000CF482 /* Float+Extension.swift */; };
 		C81B0300223C886E000CF482 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B02F7223C886E000CF482 /* ViewController+Extension.swift */; };
+		C8650FA4225BBB6D005B4F39 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8650FA3225BBB6D005B4F39 /* GenericTableViewController.swift */; };
+		C8650FA6225BBB95005B4F39 /* UIView+anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8650FA5225BBB95005B4F39 /* UIView+anchors.swift */; };
 		C8961D3C2241700400733A16 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8961D3B2241700400733A16 /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		C81B02F5223C886E000CF482 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C81B02F6223C886E000CF482 /* Float+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		C81B02F7223C886E000CF482 /* ViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		C8650FA3225BBB6D005B4F39 /* GenericTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		C8650FA5225BBB95005B4F39 /* UIView+anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+anchors.swift"; sourceTree = "<group>"; };
 		C8961D3B2241700400733A16 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,7 @@
 		C81B02A0223C7EAE000CF482 /* LFBR.SwiftLib */ = {
 			isa = PBXGroup;
 			children = (
+				C8650FA2225BBB54005B4F39 /* Generics+UI */,
 				C81B02EE223C886E000CF482 /* Extensions */,
 				C81B02DC223C879E000CF482 /* Crypto */,
 				C81B02DE223C879E000CF482 /* UI&UX */,
@@ -192,6 +197,7 @@
 		C81B02EE223C886E000CF482 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C8650FA5225BBB95005B4F39 /* UIView+anchors.swift */,
 				C81B02F0223C886E000CF482 /* Int+Extension.swift */,
 				C81B02F1223C886E000CF482 /* UIWindow+Extension.swift */,
 				C81B02F2223C886E000CF482 /* Date+Extension.swift */,
@@ -203,6 +209,14 @@
 				C81B02F7223C886E000CF482 /* ViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8650FA2225BBB54005B4F39 /* Generics+UI */ = {
+			isa = PBXGroup;
+			children = (
+				C8650FA3225BBB6D005B4F39 /* GenericTableViewController.swift */,
+			);
+			path = "Generics+UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C81B02F9223C886E000CF482 /* Int+Extension.swift in Sources */,
+				C8650FA6225BBB95005B4F39 /* UIView+anchors.swift in Sources */,
 				C81B02FA223C886E000CF482 /* UIWindow+Extension.swift in Sources */,
 				C81B02FC223C886E000CF482 /* Sizes+Extension.swift in Sources */,
 				C8961D3C2241700400733A16 /* Double+Extension.swift in Sources */,
@@ -356,6 +371,7 @@
 				C81B02EA223C879E000CF482 /* ReachabilityManager.swift in Sources */,
 				C81B0300223C886E000CF482 /* ViewController+Extension.swift in Sources */,
 				C81B02FB223C886E000CF482 /* Date+Extension.swift in Sources */,
+				C8650FA4225BBB6D005B4F39 /* GenericTableViewController.swift in Sources */,
 				C81B02EC223C879E000CF482 /* MessageObject.swift in Sources */,
 				C81B02EB223C879E000CF482 /* Reachability.swift in Sources */,
 				C81B02E7223C879E000CF482 /* CommonCrypto.swift in Sources */,
