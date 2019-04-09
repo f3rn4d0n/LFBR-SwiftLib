@@ -47,10 +47,16 @@ class LFBR_SwiftLibTests: XCTestCase {
         do {
             let sourceData = "AES256".data(using: .utf8)!
             let password = "password"
+            
+            
             let salt = AES256Crypter.randomSalt()
-            let iv = AES256Crypter.randomIv()
+            let iv = AES256Crypter.randomIv() //Initialize vector
             let key = try AES256Crypter.createKey(password: password.data(using: .utf8)!, salt: salt)
+            
+            
             let aes = try AES256Crypter(key: key, iv: iv)
+            
+            
             let encryptedData = try aes.encrypt(sourceData)
             let decryptedData = try aes.decrypt(encryptedData)
             

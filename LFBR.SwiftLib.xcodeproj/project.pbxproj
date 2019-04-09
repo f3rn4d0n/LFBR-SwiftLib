@@ -298,9 +298,11 @@
 				TargetAttributes = {
 					C81B029D223C7EAE000CF482 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					C81B02A6223C7EAE000CF482 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					C81B02BB223C7F69000CF482 = {
 						CreatedOnToolsVersion = 10.1;
@@ -570,7 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gastandoTenis.LFBR-SwiftLib";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -595,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gastandoTenis.LFBR-SwiftLib";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -614,7 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gastandoTenis.LFBR-SwiftLibTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -633,7 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gastandoTenis.LFBR-SwiftLibTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
