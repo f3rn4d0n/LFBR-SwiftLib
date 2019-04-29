@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LFBR.SwiftLib"
-  spec.version      = "0.2.0"
+  spec.version      = "0.2.1"
   spec.summary      = " 📦 Commons extensions, cryptosecurity, rechability and complements written in swift to be development easier"
 
   # This description is used to generate tags and improve search results.
